@@ -1,5 +1,7 @@
 # mybr
+
 playground for resource and data presentation
+This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
 ## test data
 
@@ -8,3 +10,49 @@ generated with chat gpt:
 ```
 Generate a csv of 100 records with the fields: id (integer, starting at 1), name (string, limit 50 chars), street_address (string, limit 50 chars), city (string, united states only), state (string, two-letter code), postal_code (integer, United States only), latitude (long, United States only), longitude (long, United States only), legal (boolean), youth (boolean), adult (boolean), housing (boolean).
 ```
+
+## Dependencies
+
+(This is based on a Unix OS...windows may be a bit different)
+
+* Github account (if you will need to interact with this repo)
+* [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
+    * this is...technically optional, as you can edit things directly in Github's WebIDE, but is good if you want to run things locally.
+* Node.js v18.16
+    * recommend using [NVM (Node version manager)](https://github.com/nvm-sh/nvm#installing-and-updating) to maintain your node versions
+    * this includes [npm.js](https://docs.npmjs.com/downloading-and-installing-node-js-and-npm)
+* angular CLI
+    * install using npm: `npm install -g @angular/cli`
+
+## Local Development
+
+### Get the Code 
+
+* Check out the repository
+    * using the terminal, navigate to a folder in which you want your code repo to reside
+    * run `git clone https://github.com/meldaravaniel/mybr.git`
+* Go into the folder `cd mybr`
+
+### Development server
+
+To open in your default browser, run `ng serve --open`.  Otherwise, run `ng serve` for a dev server. Navigate to `http://localhost:4200/` in your browser. The application will automatically reload if you change any of the source files.
+
+### Code scaffolding
+
+Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+
+### Build
+
+Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+
+### Running unit tests
+
+Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+
+### Running end-to-end tests
+
+Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+
+### Further help
+
+To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
