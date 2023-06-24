@@ -1,4 +1,4 @@
-id,name,street_address,city,state,postal_code,latitude,longitude,legal,youth,adult,housing
+$id,name,street_address,city,state,postal_code,latitude,longitude,legal,youth,adult,housing
 1,John Smith,123 Main St,New York,NY,10001,40.7128,-74.0060,true,true,false,true
 2,Jane Doe,456 Elm St,Los Angeles,CA,90001,34.0522,-118.2437,false,true,false,true
 3,Michael Johnson,789 Oak Ave,Chicago,IL,60601,41.8781,-87.6298,true,false,true,false

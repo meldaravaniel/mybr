@@ -16,6 +16,7 @@ Generate a csv of 100 records with the fields: id (integer, starting at 1), name
 (This is based on a Unix OS...windows may be a bit different)
 
 * Github account (if you will need to interact with this repo)
+    * You'll also need to [make an SSH key](https://docs.github.com/en/authentication/connecting-to-github-with-ssh) to interact with github, as they no longer support user/pass authentication.
 * [git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git)
     * this is...technically optional, as you can edit things directly in Github's WebIDE, but is good if you want to run things locally.
 * Node.js v18.16
