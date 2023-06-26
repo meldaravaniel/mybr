@@ -3,27 +3,27 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "mybr": {
+    "meldaravaniel.github.io": {
+      "root": "",
+      "sourceRoot": "src",
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
           "style": "sass"
         }
       },
-      "root": "",
-      "sourceRoot": "src",
       "prefix": "app",
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/mybr",
+            "outputPath": "dist",
             "index": "src/index.html",
             "main": "src/main.ts",
+            "tsConfig": "tsconfig.app.json",
             "polyfills": [
               "zone.js"
             ],
-            "tsConfig": "tsconfig.app.json",
             "inlineStyleLanguage": "sass",
             "assets": [
               "src/favicon.ico",
@@ -65,7 +65,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "mybr:build:production"
+              "browserTarget": "meldaravaniel.github.io:build:production"
             },
             "development": {
               "browserTarget": "mybr:build:development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "mybr:build"
+            "browserTarget": "meldaravaniel.github.io:build"
           }
         },
         "test": {
@@ -97,8 +97,22 @@
             ],
             "scripts": []
           }
+        },
+        "lint": {
+          "builder": "@angular-eslint/builder:lint",
+          "options": {
+            "lintFilePatterns": [
+              "src/**/*.ts",
+              "src/**/*.html"
+            ]
+          }
         }
       }
     }
+  },
+  "cli": {
+    "schematicCollections": [
+      "@angular-eslint/schematics"
+    ]
   }
 }
