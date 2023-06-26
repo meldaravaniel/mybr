@@ -1,4 +1,4 @@
-# mybr
+# [mybr](https://meldaravaniel.github.io/mybr/)
 
 playground for resource and data presentation
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
@@ -56,7 +56,18 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 
 ### Deploying to Github Pages
 
-* install gh-pages: `npm install -g gh-pages`
+* Instructions I used are [here](https://www.makeuseof.com/angular-app-github-deploy-using-angular-cli/)
+* install gh-pages: `npm install -g gh-pages` (alternately the angular-cli-gh-pages or whatever)
+
+#### Setup (one time)
+1) make a branch called `gh-pages`
+1) make sure that's the branch selected under the Settings > Pages > Build and Deployment section (also enable deploy from branch)
+
+#### Actual Deploy
+The section in the above instructions about using `ng deploy --base-href` etc doesn't work because that command no longer recognizes the base-href argument.  It only recognizes the `-c` or `configuration` argument, so the stuff is all configured in the [angular.json](angular.json) file.
+
+Former instructions, but they still work (if you also do the gh-pages branch dance):
+
 * Build it: `ng build -c production --base-href ""`
 * Deploy the dist folder that gets created to gh-pages: `gh-pages -d dist`
 
