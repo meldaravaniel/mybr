@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "meldaravaniel.github.io": {
+    "mybr": {
       "root": "",
       "sourceRoot": "src",
       "projectType": "application",
@@ -65,7 +65,7 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "meldaravaniel.github.io:build:production"
+              "browserTarget": "mybr:build:production"
             },
             "development": {
               "browserTarget": "mybr:build:development"
@@ -76,7 +76,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "meldaravaniel.github.io:build"
+            "browserTarget": "mybr:build"
           }
         },
         "test": {
