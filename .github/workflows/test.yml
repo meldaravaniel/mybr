@@ -10,7 +10,7 @@ on:
       - edited
       - reopened
 jobs:
-  build-and-deploy:
+  test-app:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
@@ -31,7 +31,7 @@ jobs:
           key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
           restore-keys: |
             ${{ runner.os }}-node-
-      - name: Build
+      - name: Test
         run: |
           npm install
           npm run-script test
