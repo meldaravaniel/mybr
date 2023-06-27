@@ -5,7 +5,9 @@
     "ng": "ng",
     "start": "ng serve",
     "build": "ng build",
-    "watch": "ng build --watch --configuration development",
+    "build-prod": "ng build -c production --base-href \"\"", 
+    "deploy": "gh-pages -d dist",
+    "watch": "ng build --watch",
     "test": "ng test",
     "lint": "ng lint"
   },
