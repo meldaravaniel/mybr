@@ -8,7 +8,7 @@
     "build-prod": "ng build -c production --base-href \"\"", 
     "deploy": "gh-pages -d dist",
     "watch": "ng build --watch",
-    "test": "ng test",
+    "test": "ng test --browsers ChromeHeadless",
     "lint": "ng lint"
   },
   "private": true,

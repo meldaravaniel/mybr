@@ -32,7 +32,8 @@ jobs:
           restore-keys: |
             ${{ runner.os }}-node-
       - name: Test
+        uses: coactions/setup-xvfb@v1
         run: |
           npm install
-          npm run-script test
+          npm test
       - run: echo "🍏 This job's status is ${{ job.status }}."
