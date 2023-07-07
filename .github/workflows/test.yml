@@ -1,11 +1,14 @@
 name: Test
 run-name: Test angular app
 on: 
-  pull_request:
-    types:
-      - opened
-      - edited
-      - reopened
+  push:
+    branches-ignore:
+      - main
+  # pull_request:
+  #   types:
+  #     - opened
+  #     - edited
+  #     - reopened
 jobs:
   test-app:
     runs-on: ubuntu-latest
