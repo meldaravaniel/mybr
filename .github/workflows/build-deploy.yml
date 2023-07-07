@@ -1,9 +1,6 @@
 name: Build and Deploy
 run-name: Build and deploy angular app to gh-pages
 on: 
-  push:
-    branches-ignore:
-      - main
   pull_request:
     types:
       - opened
@@ -38,7 +35,8 @@ jobs:
       - name: Deploy
         uses: JamesIves/github-pages-deploy-action@releases/v4
         with:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
           FOLDER: dist
+        permissions:
+          contents: write
       - run: echo "🍏 This job's status is ${{ job.status }}."
