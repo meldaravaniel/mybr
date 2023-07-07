@@ -2,7 +2,7 @@ name: Build and Deploy
 run-name: Build and deploy angular app to gh-pages
 on: 
   push:
-    branches-ignore:
+    branches:
       - main
 jobs:
   build-and-deploy:
