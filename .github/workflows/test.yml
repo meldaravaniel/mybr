@@ -1,9 +1,11 @@
 name: Test
 run-name: Test angular app
 on: 
-  push: # prolly wanna actually have this only on PR's...but meh for now.
-    branches-ignore:
-      - main
+  pull_request:
+    types:
+      - opened
+      - edited
+      - reopened
 jobs:
   test-app:
     runs-on: ubuntu-latest
