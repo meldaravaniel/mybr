@@ -1,11 +1,9 @@
 name: Build and Deploy
 run-name: Build and deploy angular app to gh-pages
 on: 
-  pull_request:
-    types:
-      - opened
-      - edited
-      - reopened
+  push:
+    branches-ignore:
+      - main
 jobs:
   build-and-deploy:
     runs-on: ubuntu-latest
