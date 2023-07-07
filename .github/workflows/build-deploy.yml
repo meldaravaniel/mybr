@@ -1,0 +1,39 @@
+name: Build and Deploy
+run-name: Build and deploy angular app to gh-pages
+on: 
+  push:
+    branches:
+      - main
+jobs:
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Install node and npm
+        uses: actions/setup-node@v3 # install node and npm 
+        with:
+          node-version: '18.x'
+      - name: Get npm cache directory
+        id: npm-cache-dir
+        shell: bash
+        run: echo "dir=$(npm config get cache)" >> ${GITHUB_OUTPUT}
+      - name: Cache node packages
+        uses: actions/cache@v3
+        id: npm-cache
+        with: 
+          path: ${{ steps.npm-cache-dir.outputs.dir }}
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+      - name: Build
+        run: |
+          npm install
+          npm build-prod
+      - name: Deploy
+        uses: JamesIves/github-pages-deploy-action@releases/v4
+        with:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: gh-pages
+          FOLDER: dist
+      - run: echo "🍏 This job's status is ${{ job.status }}."

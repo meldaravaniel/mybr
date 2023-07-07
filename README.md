@@ -74,3 +74,7 @@ The section in the above instructions about using `ng deploy --base-href` etc do
 ### Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+## TODO
+
+- [ ] the workflow for test doesn't work because of Chrome stuff. fix pls.
