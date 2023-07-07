@@ -34,5 +34,5 @@ jobs:
       - name: Test
         run: |
           npm install
-          npm test-ci
+          npm run test-ci
       - run: echo "🍏 This job's status is ${{ job.status }}."
