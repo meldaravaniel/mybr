@@ -4,8 +4,8 @@ import { ToolbarComponent } from './toolbar/toolbar.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent],
-    imports: [ToolbarComponent]
+    declarations: [AppComponent, ToolbarComponent],
+    imports: []
   }));
 
   it('should create the app', () => {
