@@ -1,10 +1,12 @@
 import { TestBed } from '@angular/core/testing';
 import { AppComponent } from './app.component';
+import { MenuComponent } from './menu/menu.component';
+import { ResourcesComponent } from './resources/resources.component';
 import { ToolbarComponent } from './toolbar/toolbar.component';
 
 describe('AppComponent', () => {
   beforeEach(() => TestBed.configureTestingModule({
-    declarations: [AppComponent, ToolbarComponent],
+    declarations: [AppComponent, ToolbarComponent, ResourcesComponent, MenuComponent],
     imports: []
   }));
 
