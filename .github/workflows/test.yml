@@ -1,7 +1,7 @@
 name: Test
 run-name: Test angular app
 on: 
-  push: # prolly wanna actually have this only on PR's...but meh for now.
+  push:
     branches-ignore:
       - main
 jobs:
