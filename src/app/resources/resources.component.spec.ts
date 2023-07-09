@@ -18,6 +18,7 @@ describe('ResourcesComponent', () => {
         MatPaginatorModule,
         MatSortModule,
         MatTableModule,
+        MatPaginatorModule
       ]
     }).compileComponents();
   }));

@@ -10,7 +10,10 @@ describe('MenuComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [MenuComponent],
-      imports: [MatIconModule, MatMenuModule]
+      imports: [
+        MatIconModule,
+        MatMenuModule
+      ]
     });
     fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;

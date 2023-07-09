@@ -13,7 +13,11 @@ describe('ToolbarComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ToolbarComponent, MenuComponent],
-      imports: [MatToolbarModule, MatIconModule, MatMenuModule]
+      imports: [
+        MatToolbarModule,
+        MatIconModule,
+        MatMenuModule
+      ]
     });
     fixture = TestBed.createComponent(ToolbarComponent);
     component = fixture.componentInstance;
