@@ -1,5 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 import { MatIconModule } from '@angular/material/icon';
+import { MatMenuModule } from '@angular/material/menu';
 import { MatToolbarModule } from '@angular/material/toolbar';
 import { MenuComponent } from '../menu/menu.component';
 
@@ -12,7 +13,7 @@ describe('ToolbarComponent', () => {
   beforeEach(() => {
     TestBed.configureTestingModule({
       declarations: [ToolbarComponent, MenuComponent],
-      imports: [MatToolbarModule, MatIconModule]
+      imports: [MatToolbarModule, MatIconModule, MatMenuModule]
     });
     fixture = TestBed.createComponent(ToolbarComponent);
     component = fixture.componentInstance;
