@@ -34,12 +34,6 @@ import { MenuComponent } from './menu/menu.component';
     MatPaginatorModule,
     MatSortModule
   ],
-  exports: [
-    AppComponent,
-    ToolbarComponent,
-    ResourcesComponent,
-    MenuComponent
-  ],
   providers: [],
   bootstrap: [AppComponent]
 })

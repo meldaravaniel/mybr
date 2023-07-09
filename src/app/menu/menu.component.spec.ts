@@ -1,6 +1,6 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { MenuComponent } from './menu.component';
+import { MatIconModule } from '@angular/material/icon';
 
 describe('MenuComponent', () => {
   let component: MenuComponent;
@@ -8,7 +8,8 @@ describe('MenuComponent', () => {
 
   beforeEach(() => {
     TestBed.configureTestingModule({
-      declarations: [MenuComponent]
+      declarations: [MenuComponent],
+      imports: [MatIconModule]
     });
     fixture = TestBed.createComponent(MenuComponent);
     component = fixture.componentInstance;
