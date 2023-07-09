@@ -1,0 +1,21 @@
+<button mat-icon-button class="example-icon" aria-label="Example icon-button with menu icon" [matMenuTriggerFor]="menu">
+    <mat-icon>menu</mat-icon>
+</button>
+<mat-menu #menu="matMenu">
+    <button mat-menu-item [matMenuTriggerFor]="resources">Resources</button>
+    <button mat-menu-item [matMenuTriggerFor]="about">About Us</button>
+    <button mat-menu-item>Donate</button>
+</mat-menu>
+<mat-menu #resources="matMenu">
+    <button mat-menu-item>Resource Map</button>
+    <button mat-menu-item>Our Partner Organizations</button>
+    <button mat-menu-item>National Resources</button>
+    <button mat-menu-item>Resources By State</button>
+</mat-menu>
+<mat-menu #about="matMenu">
+    <button mat-menu-item>Who We Are</button>
+    <button mat-menu-item>Privacy Policy</button>
+
+    <button mat-menu-item>Contact Us</button>
+    <button mat-menu-item>Apply to Volunteer</button>
+</mat-menu>
