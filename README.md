@@ -1,15 +1,12 @@
 # [mybr](https://meldaravaniel.github.io/mybr/)
 
-playground for resource and data presentation
+Prototype for [My Yellow Brick Road](myyellowbrickroad.org)'s list of support services and organizations for Trans and Queer folks. 
+
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.1.
 
-## test data
+## the data
 
-generated with chat gpt:
-
-```
-Generate a csv of 100 records with the fields: id (integer, starting at 1), name (string, limit 50 chars), street_address (string, limit 50 chars), city (string, united states only), state (string, two-letter code), postal_code (integer, United States only), latitude (long, United States only), longitude (long, United States only), legal (boolean), youth (boolean), adult (boolean), housing (boolean).
-```
+Is manually collected, vetted, and organized by mybr volunteers. If you have additions or corrections, please submit a PR.
 
 ## Dependencies
 
